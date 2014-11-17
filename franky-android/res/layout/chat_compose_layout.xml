@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5.0dip"
+        android:background="@drawable/grey_bottom"
+        android:paddingBottom="7.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="7.0dip" >
+
+        <ImageView
+            android:layout_gravity="top"
+            android:id="@+id/add_attachment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3.0dip"
+            android:layout_marginTop="2.0dip"
+            android:scaleType="fitCenter"
+            android:background="@drawable/attach_button" />
+
+        <com.gorecode.vk.view.HelveticaEditText
+            android:id="@+id/message_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/input_msg"
+            android:hint="@string/chat_messages_input_hint"
+            android:maxLines="3"
+            android:textColorHint="#ffa6a6a6"
+            android:textSize="16.0sp" />
+
+        <com.gorecode.vk.view.MyriadButton
+            android:id="@+id/send_message_button"
+            android:layout_gravity="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginTop="2.0dip"
+            android:background="@drawable/send_button"
+            android:paddingLeft="9.0dip"
+            android:paddingRight="9.0dip"
+            android:text="@string/chat_messages_button_send"
+            android:textColor="#ffffffff"
+            android:textSize="14.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/attachments_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="110.0dip"
+        android:background="@drawable/attach_background"
+        android:scrollbarThumbHorizontal="@drawable/scrollbar_attach" >
+
+        <LinearLayout
+            android:id="@+id/attachments_list"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingTop="5dip"
+            android:paddingRight="13dip"
+            android:paddingLeft="13dip"
+            android:paddingBottom="2dip">
+
+            <View
+                android:id="@+id/attach_photo_from_camera_button"
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/attach_photo_from_camera_button"/>
+
+            <View
+                android:id="@+id/attach_photo_from_gallery_button"
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/attach_photo_from_gallery_button"/>
+
+            <View
+                android:id="@+id/attach_location_button"
+                android:layout_width="74dip"
+                android:layout_height="74dip"
+                android:background="@drawable/attach_location_button"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

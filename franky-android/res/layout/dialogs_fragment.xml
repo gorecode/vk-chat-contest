@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gorecode.vk.view.VkActionBar
+        android:id="@id/actionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        vk:actionButton_image="@drawable/compose"
+        vk:backButton_visible="false"
+        vk:title="@string/dialogs_title" >
+    </com.gorecode.vk.view.VkActionBar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.gorecode.vk.view.LoaderLayout
+            xmlns:franky="http://schemas.android.com/apk/res/com.gorecode.vk"
+            android:id="@+id/listLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@android:id/list"
+                    style="@style/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="@android:color/transparent" />
+
+                <FrameLayout
+                    xmlns:franky="http://schemas.android.com/apk/res/com.gorecode.vk"
+                    android:id="@+id/dialogsLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <com.gorecode.vk.view.TextViewCustomFont
+                        android:id="@android:id/empty"
+                        style="@style/emptyListText"
+                        android:text="@string/empty_list_dialogs" />
+                </FrameLayout>
+            </RelativeLayout>
+        </com.gorecode.vk.view.LoaderLayout>
+
+        <FrameLayout
+            xmlns:franky="http://schemas.android.com/apk/res/com.gorecode.vk"
+            android:id="@+id/messagesLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.gorecode.vk.view.TextViewCustomFont
+                android:id="@android:id/empty"
+                style="@style/emptyListText"
+                android:text="@string/empty_list_messages_search" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/compose_layout"
+            android:layout_gravity="bottom|left|center"
+            android:background="@drawable/popup_menu_top"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/popup_item_compose_message"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/popup_item_background"
+                android:clickable="true"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/compose" />
+
+                <com.gorecode.vk.view.MyriadTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7.0dip"
+                    android:text="@string/popup_item_compose_message"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:background="@drawable/delimeter2" />
+
+            <LinearLayout
+                android:id="@+id/popup_item_create_group_chat"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/popup_item_background"
+                android:clickable="true"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/multichat_pressed" />
+
+                <com.gorecode.vk.view.MyriadTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7.0dip"
+                    android:text="@string/popup_item_create_group_chat"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

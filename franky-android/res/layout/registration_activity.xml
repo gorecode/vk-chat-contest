@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gore="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_light"
+    android:orientation="vertical" >
+
+    <com.gorecode.vk.view.VkActionBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        gore:title="@string/registration_title">
+    </com.gorecode.vk.view.VkActionBar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="35.0dip"
+        android:paddingLeft="35.0dip"
+        android:paddingTop="35.0dip" >
+
+        <LinearLayout
+            android:id="@+id/registrationPage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/phoneLayout"
+                    android:layout_width="35.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/phoneErrorImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/error" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/phone"
+                    style="@style/registration_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/phoneLayout"
+                    android:hint="@string/registration_phone_hint"
+                    android:inputType="phone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/firstNameLayout"
+                    android:layout_width="35.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/firstNameErrorImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ok" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/firstName"
+                    style="@style/registration_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/firstNameLayout"
+                    android:hint="@string/registration_first_name_hint"
+                    android:inputType="textPersonName" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/lastNameLayout"
+                    android:layout_width="35.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/lastNameErrorImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ok"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/lastName"
+                    style="@style/registration_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_toLeftOf="@id/lastNameLayout"
+                    android:hint="@string/registration_last_name_hint"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/registration_button"
+                    style="@style/blue_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/lastName"
+                    android:layout_alignRight="@id/lastName"
+                    android:layout_below="@id/lastName"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/registration_button_text" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirmationPage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="8.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/confirmationCodeLayout"
+                    android:layout_width="35.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/confirmationCodeImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/error" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/confirmationCode"
+                    style="@style/registration_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/confirmationCodeLayout"
+                    android:hint="@string/registration_confirmation_code_hint"
+                    android:inputType="phone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/passwordLayout"
+                    android:layout_width="35.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/passwordImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ok"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/registration_edit_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_toLeftOf="@id/passwordLayout"
+                    android:hint="@string/registration_password_hint"
+                    android:password="true" />
+
+                <Button
+                    android:id="@+id/complete_registration_button"
+                    style="@style/blue_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/password"
+                    android:layout_alignRight="@id/password"
+                    android:layout_below="@id/password"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/complete_registration_button_text" />
+
+                <Button
+                    android:id="@+id/resend_confirmation_code"
+                    style="@style/blue_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/password"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@id/password"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/resend_confirmation_code_button_text" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

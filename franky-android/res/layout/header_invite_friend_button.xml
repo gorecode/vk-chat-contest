@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background"
+    android:orientation="vertical" >
+
+    <com.gorecode.vk.view.MyriadTextView
+        android:id="@+id/item_text"
+        android:layout_width="fill_parent"
+        android:minHeight="43dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="25dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/invite_friend_header_text"
+        android:textColor="@color/black_text"
+        android:textSize="18.0sp"/>
+</LinearLayout>

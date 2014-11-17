@@ -1,0 +1,180 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk" >
+
+    <LinearLayout
+        android:id="@+id/imageAttachmentsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:duplicateParentState="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/imageAttachmentsItemsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/imageAttachments_title"
+            style="@style/attachementSectionTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:text="@string/attachment_photo"
+            android:textSize="16sp" >
+        </com.gorecode.vk.view.TextViewCustomFont>
+    </LinearLayout>
+
+    <com.gorecode.vk.activity.chat.AudiosAttachmentView
+        android:id="@+id/audioAttachmentsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:duplicateParentState="true"
+        android:orientation="vertical" >
+    </com.gorecode.vk.activity.chat.AudiosAttachmentView>
+
+    <LinearLayout
+        android:id="@+id/documentAttachmentsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:duplicateParentState="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/documentAttachmentsItemsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:duplicateParentState="true"
+            android:orientation="vertical" />
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/documentAttachments_title"
+            style="@style/attachementSectionTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:text="@string/attachment_document"
+            android:textSize="16sp" >
+        </com.gorecode.vk.view.TextViewCustomFont>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/videoAttachmentsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:duplicateParentState="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/videoAttachmentsItemsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/videoAttachments_title"
+            style="@style/attachementSectionTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:text="@string/attachment_location"
+            android:textSize="16sp" >
+        </com.gorecode.vk.view.TextViewCustomFont>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/locationAttachmentsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:duplicateParentState="true"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true" >
+
+            <com.gorecode.vk.view.WebImageView
+                android:id="@+id/location_thumb"
+                android:layout_width="@dimen/image_attachment_max_width"
+                android:layout_height="@dimen/image_attachment_max_height"
+                android:layout_marginBottom="3dip"
+                android:duplicateParentState="true" >
+            </com.gorecode.vk.view.WebImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:duplicateParentState="true"
+                android:src="@drawable/map_location" />
+        </FrameLayout>
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/location_title"
+            style="@style/attachementSectionTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:text="@string/attachment_location"
+            android:textSize="16sp" >
+        </com.gorecode.vk.view.TextViewCustomFont>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/messageAttachmentsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:duplicateParentState="true"
+        android:orientation="vertical" >
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/messageAttachments_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5.0dip"
+            android:duplicateParentState="true"
+            android:text="@string/attachment_message"
+            android:textColor="@color/lightblue_text"
+            android:textSize="16sp" >
+        </com.gorecode.vk.view.TextViewCustomFont>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true" >
+
+            <View
+                android:layout_width="2.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:background="@color/attachment_border" />
+
+            <LinearLayout
+                android:id="@+id/messageAttachmentsItemsLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:duplicateParentState="true"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

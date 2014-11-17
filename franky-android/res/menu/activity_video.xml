@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/quality_240" android:title="@string/menu_quality_240"></item>
+    <item android:id="@+id/quality_320" android:title="@string/menu_quality_320"></item>
+    <item android:id="@+id/quality_480" android:title="@string/menu_quality_480"></item>
+    <item android:id="@+id/quality_720" android:title="@string/menu_quality_720"></item>
+</menu>

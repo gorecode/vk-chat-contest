@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="image_attachment_max_width">138dip</dimen>
+	<dimen name="image_attachment_max_height">102dip</dimen>
+	<color name="title_color">#000000</color>
+	<color name="text_color">#000000</color>
+	<color name="grey_timestamp_color">#8f9eac</color>
+	
+	<color name="silver_divider">#dde8f5</color>
+	<color name="attachment_border">#b9c7d5</color>
+	<color name="unread_message_background_color">#c2cdd8</color>
+
+	<color name="message_background_unread">#c4cfd9</color>
+	<color name="message_background_read">#e0e6ec</color>
+</resources>

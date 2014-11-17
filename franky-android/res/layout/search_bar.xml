@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="9dip"
+    android:paddingLeft="7dip"
+    android:paddingRight="7dip"
+    android:paddingTop="9dip" >
+
+    <com.gorecode.vk.view.SearchAutoCompleteTextView
+        android:id="@+id/editSearch"
+        style="@style/searchEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawablePadding="5dip"
+        android:paddingRight="27dip"
+        android:ellipsize="end"
+        android:imeOptions="actionSearch"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:scaleType="fitXY"
+        android:layout_marginRight="5dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/delete_attach" />
+</RelativeLayout>

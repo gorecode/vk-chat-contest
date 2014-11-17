@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/contact_sync_progress_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/grey_progress" />
+
+        <com.gorecode.vk.view.HelveticaTextView
+            android:id="@+id/state_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/sync_state_get_friends"
+            android:textColor="#FFFFFF"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <com.gorecode.vk.view.HelveticaTextView
+            android:id="@+id/progress_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:gravity="center"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/sync_progress"
+            android:textColor="#FFFFFF"
+            android:textSize="15.0sp"/>
+    </LinearLayout>
+
+</LinearLayout>

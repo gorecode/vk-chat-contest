@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="136.0dip"
+    android:layout_height="100.0dip"
+    android:layout_marginBottom="5dip"
+    android:layout_gravity="center_horizontal"
+    android:clickable="true" >
+
+    <com.gorecode.vk.view.WebImageView
+        android:id="@+id/video_thumb"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:background="@android:color/black"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/video_play" />
+
+    <com.gorecode.vk.view.TextViewCustomFont
+        android:id="@+id/video_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|center"
+        android:layout_margin="2.0dip"
+        android:background="#80000000"
+        android:padding="2.0dip"
+        android:text="1:20:40"
+        android:textColor="#ffffffff"
+        android:textSize="13.0sp"
+        vk:typeface="myriad.ttf" />
+
+</FrameLayout>

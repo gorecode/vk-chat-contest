@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <ImageView android:layout_width="wrap_content"
+            android:id="@+id/close_button"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete_attach"
+            android:layout_gravity="right"/>
+        <com.gorecode.vk.view.WebImageView
+            android:id="@+id/captcha_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="75dip"
+            android:scaleType="fitCenter" />
+
+        <EditText
+            android:id="@+id/captcha_key"
+            style="@style/edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:inputType="textVisiblePassword"
+            android:layout_marginTop="5dip"
+            android:hint="@string/captcha_key_hint" />
+
+        <Button
+            android:id="@+id/submit_captcha"
+            style="@style/blue_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:text="@string/submit_captcha_button_text" />
+    </LinearLayout>
+
+</FrameLayout>

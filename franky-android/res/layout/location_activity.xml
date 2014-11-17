@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_light"
+    android:orientation="vertical" >
+
+    <com.gorecode.vk.view.VkActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        vk:actionButton_visible="true"
+        vk:backButton_visible="true"
+        vk:title="@string/pick_location_activity_title" >
+    </com.gorecode.vk.view.VkActionBar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.google.android.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:apiKey="05RMgwl_IQ06n31I53d4UsJaAFuPwek33UZN_HA"
+            android:clickable="true"
+            android:enabled="true" />
+
+        <Button
+            android:id="@+id/pick_location_button"
+            style="@style/blue_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="3dip"
+            android:text="@string/pick_location_button_text" />
+    </LinearLayout>
+
+</LinearLayout>

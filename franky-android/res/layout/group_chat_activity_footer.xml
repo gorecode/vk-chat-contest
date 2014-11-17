@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dip"
+    android:orientation="vertical" >
+
+    <EditText
+        style="@style/registration_edit_text"
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:hint="@string/dialog_title_hint" />
+
+    <Button
+        style="@style/blue_button"
+        android:id="@+id/change_dialog_title_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:text="@string/change_dialog_title_button_text" >
+    </Button>
+
+    <Button
+        style="@style/blue_button"
+        android:id="@+id/add_participant_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:text="@string/add_participant_button_text" >
+    </Button>
+
+    <Button
+        style="@style/blue_button"
+        android:id="@+id/create_group_chat_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:text="@string/create_group_chat_button_text" >
+    </Button>
+
+</LinearLayout>

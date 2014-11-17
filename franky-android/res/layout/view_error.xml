@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sad" />
+
+    <com.gorecode.vk.view.TextViewCustomFont
+        android:id="@+id/imageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_horizontal"
+        android:text="@string/some_trouble"
+        android:textColor="#7e8083"
+        android:textSize="17sp"
+        vk:typeface="myriad.ttf" />
+
+    <Button
+        android:id="@+id/retry"
+        style="@style/blue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dip"
+        android:drawableLeft="@drawable/try_again_icon"
+        android:drawablePadding="8dip"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:text="@string/retry_button_text"/>
+
+</LinearLayout>

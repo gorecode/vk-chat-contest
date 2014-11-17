@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:duplicateParentState="true"
+    android:orientation="horizontal"
+    android:paddingTop="3.0dip" >
+
+    <ImageView
+        android:id="@+id/play_or_pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3.0dip"
+        android:layout_marginTop="3.0dip"
+        android:duplicateParentState="true"
+        android:src="@drawable/audio_play" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:orientation="vertical" >
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:minWidth="200dip"
+            android:singleLine="true"
+            android:text="Граждаская Оборона"
+            android:textColor="@color/black_text"
+            android:textSize="17.0sp"
+            android:textStyle="bold"
+            vk:typeface="myriad.ttf" />
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5.0dip"
+            android:duplicateParentState="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingBottom="2dip"
+            android:singleLine="true"
+            android:text="Винтовка это правздник"
+            android:textColor="@color/black_text"
+            android:textSize="16.0sp"
+            vk:typeface="helvetica.ttf" />
+
+        <SeekBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:maxHeight="5dip"
+            android:minHeight="5dip"
+            android:paddingLeft="7dip"
+            android:progressDrawable="@drawable/audio_progress"
+            android:thumb="@drawable/audio_control" />
+    </LinearLayout>
+
+</LinearLayout>

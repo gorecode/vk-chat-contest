@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:franky="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/black_top"
+        android:orientation="horizontal" >
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            style="@style/friendTabTitle"
+            android:id="@+id/buttonFriends"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/friends_tab_title"/>
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            style="@style/friendTabTitle"
+            android:id="@+id/buttonFriendsOnline"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/friends_online_tab_title"/>
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            style="@style/friendTabTitle"
+            android:id="@+id/buttonContacts"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/friends_contacts_tab_title"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragmentsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.gorecode.vk.activity.friends.FriendsPageView
+            android:id="@+id/friendsPage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.gorecode.vk.activity.friends.FriendsPageView>
+
+        <com.gorecode.vk.activity.friends.FriendsPageView
+            android:id="@+id/friendsOnlinePage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </com.gorecode.vk.activity.friends.FriendsPageView>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/pref_section_push_notifications">
+        <CheckBoxPreference android:title="@string/pref_push_notifications_enabled" android:key="push_enabled"/>
+        <CheckBoxPreference android:title="@string/pref_push_notifications_sound" android:key="push_sound"/>
+        <CheckBoxPreference android:title="@string/pref_push_notifications_vibration" android:key="push_vibration"/>
+    </PreferenceCategory>
+</PreferenceScreen>

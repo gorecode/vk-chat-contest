@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gorecode.vk.view.LoaderLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:id="@id/loaderLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_light" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <com.gorecode.vk.view.VkActionBar
+            android:id="@id/actionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            vk:actionButton_visible="false" >
+        </com.gorecode.vk.view.VkActionBar>
+
+        <ListView
+            android:id="@android:id/list"
+            style="@style/listOfUsers"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+
+        <TextView
+            style="@style/emptyListText"
+            android:id="@android:id/empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/participant_list_is_empty" />
+    </LinearLayout>
+
+</com.gorecode.vk.view.LoaderLayout>

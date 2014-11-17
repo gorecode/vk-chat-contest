@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:orientation="horizontal"
+        android:paddingBottom="8.5dip"
+        android:paddingLeft="3.5dip"
+        android:paddingRight="3.5dip"
+        android:paddingTop="8.5dip" >
+
+        <com.gorecode.vk.view.WebImageView
+            android:id="@+id/photo_thumb"
+            android:layout_width="29.0dip"
+            android:layout_height="29.0dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginRight="5.0dip" />
+
+        <LinearLayout
+            android:id="@+id/message_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/msgin"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.gorecode.vk.view.TextViewCustomFont
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:lineSpacingMultiplier="1.08"
+                android:text="Short"
+                android:textColor="@color/black_text"
+                android:textSize="17.0sp"
+                vk:typeface="helvetica.ttf" />
+
+            <LinearLayout
+                android:id="@+id/attachments_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:gravity="center"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:duplicateParentState="true"
+            android:shadowColor="#ffe9eef2"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="19:00"
+            android:textColor="#8f9eac"
+            android:textSize="15.0sp"
+            vk:typeface="helvetica.ttf" />
+    </LinearLayout>
+
+</merge>

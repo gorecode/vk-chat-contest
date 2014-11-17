@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gorecode.vk"
+    android:versionCode="8"
+    android:versionName="1.0.8" >
+
+    <permission
+        android:name="com.gorecode.vk.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="com.gorecode.vk.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" >
+        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+
+    <application
+        android:name=".application.VkApplication"
+        android:debuggable="true"
+        android:icon="@drawable/application_icon"
+        android:label="@string/application_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <!-- Only C2DM servers can send messages for the app. If permission is not set - any other app can generate it -->
+        <receiver
+            android:name="com.google.android.c2dm.C2DMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+
+            <!-- Receive the actual message -->
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.gorecode.vk" />
+            </intent-filter>
+            <!-- Receive the registration id -->
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.gorecode.vk" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.CaptchaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.PickFriendActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name=".activity.VideoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".activity.GroupChatActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name=".activity.InviteUserActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name=".activity.chat.ChatMessageActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+
+        <receiver android:name=".receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.StopAudioPlaybackActivity"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name=".activity.ViewImageActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name=".activity.EditConfigActivity"
+            android:configChanges="keyboardHidden" >
+        </activity>
+        <activity
+            android:name=".activity.PickImageActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LocationActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name=".activity.chat.ChatActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@style/Theme.NoBackground" >
+        </activity>
+        <activity
+            android:name=".activity.UserActivity"
+            android:configChanges="keyboardHidden|orientation" >
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.NoBackground"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <service android:name=".C2DMReceiver" />
+        <service android:name=".service.NotificationService" >
+        </service>
+    </application>
+
+</manifest>

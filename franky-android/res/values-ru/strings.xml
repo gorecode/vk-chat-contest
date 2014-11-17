@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<resources>
+
+<string name="send_invitation_button">Выслать приглашение</string>
+<string name="send_invitation_button_hint">Пользователь еще не зарегистрирован.\nВы можете отправить ему приглашение.</string>    
+<string name="sms_invitation_text_format" formatted="false">Привет, я использую приложение \'%1$s\', присоединяйся. https://play.google.com/store/apps/details?id=com.gorecode.vk</string>
+    
+<string name="friends_tab_title">Друзья</string>
+<string name="friends_online_tab_title">Онлайн</string>
+<string name="friends_contacts_tab_title">Контакты</string>
+
+<string name="pick_location_activity_title">Местоположение</string>
+<string name="pick_location_button_text">Выбрать местоположение</string>
+
+<string name="registration_title">Регистрация</string>
+<string name="registration_phone_hint">Номер Вашего телефона</string>
+<string name="registration_first_name_hint">Ваше Имя</string>
+<string name="registration_last_name_hint">Ваша Фамилия</string>
+<string name="registration_button_text">Регистрация</string>
+<string name="registration_toast_wait_for_sms">Ожидайте смс с кодом для подтверждения регистрации</string>
+<string name="registration_confirmation_code_hint">Код подтверждаения</string>
+<string name="registration_password_hint">Ваш пароль</string>
+<string name="complete_registration_button_text">Завершение регистрации</string>
+<string name="resend_confirmation_code_button_text">Отправить смс еще раз</string>
+
+<string name="retry_button_text">Попробовать еще раз</string>
+
+<string name="stop_plackback_dialog_message">Выключить музыку?</string>
+
+<string name="invite_friend_button_text">Пригласить друга</string>
+
+<string name="dialogs_title">Сообщения</string>
+
+<string name="popup_item_compose_message">Написать другу</string>
+<string name="popup_item_create_group_chat">Создать коллекивную беседу</string>
+
+<string name="search_hint_default">Поиск</string>
+<string name="search_hint_people">Начните вводить имя человека</string>
+<string name="search_title">Поиск друзей</string>
+<string name="people_search_hint">Вы можете искать своих друзей и знакомых среди всех пользователей</string>
+<string name="settings_title">Настройки</string>
+
+<string name="login_hint">E-mail или телефон</string>
+<string name="password_hint">Ваш пароль</string>
+<string name="login_button_text">Войти</string>
+<string name="register_button_text">Зарегистрироваться</string>
+<string name="greeting_text">Вы сможете бесплатно обмениваться мгновенными сообщениями с друзьями</string>
+   
+<string name="currentFacebookId">374673985887159</string>
+
+<string name="preferences_section_account">Аккаунт</string>
+<string name="preferences_section_other">Другие настройки</string>
+<string name="preferences_button_text">Перейти к экрану настроек</string>
+
+<string name="change_profile_photo_button">Изменить фотографию на странице</string>
+<string name="logout_button_text">Выйти из аккаунта</string>
+
+<string name="menu_deleteDialog">Удалить беседу</string>
+
+<string name="remove_from_friends_button_text">Удалить из друзей</string>
+<string name="call_button_text_format" formatted="false">Позвонить на %1$s</string>
+<string name="send_message_button_text">Отправить сообщение</string>
+<string name="offer_friendship_button_text">Добавить в друзья</string>
+<string name="reject_offer_button_text">Отклонить заявку</string>
+<string name="add_to_friends_button_text">Добавить в друзья</string>
+
+<string name="toast_could_not_select_unsent_message">Нельзя выделить неотправленное сообщение</string>
+<string name="toast_messages_attached">Выбранные сообщения доступны для пересылки в любой беседе</string>
+<string name="toast_friendship_offer_sent">Запрос на дружбу был послан</string>
+<string name="toast_friendship_offers_rejected">Все ваши входящие заявки в друзья отклонены</string>
+<string name="toast_contacts_sync_complete">Ваши друзья успешно добавлены в контактную книгу</string>
+
+<string name="sync_contacts_button_text">Синхронизировать контакты</string>
+<string name="sync_contacts_hint">Вы можете синхронизировать список друзей VK с записной книжкой Вашего телефона</string>
+<string name="sync_state_get_friends">Загружается список друзей</string>
+<string name="sync_state_update_contacts">Синхронизируются контакты</string>
+<string name="sync_state_update_photos">Синхронизируются фотографии</string>
+<string name="sync_progress">%1$d из %2$d</string>
+<string name="invite_friend_header_text">Пригласить друга</string>
+
+<string name="list_item_separator_offers">Заявки в друзья</string>
+<string name="list_item_separator_possible_friends">Возможные друзья</string>
+<string name="list_item_separator_friends">Друзья</string>
+<string name="list_item_separator_all_people">Глобальный поиск</string>
+<string name="list_item_separator_people">Люди</string>
+<string name="list_item_separator_dialogs">Беседы</string>
+<string name="list_item_separator_messages">Сообщения</string>
+
+<string name="attachment_photo">Фотография</string>
+<string name="attachment_photos">Фотографии</string>
+<string name="attachment_video">Видеозапись</string>
+<string name="attachment_videos">Видеозаписи</string>
+<string name="attachment_audio">Аудиозапись</string>
+<string name="attachment_audios">Аудиозаписи</string>
+<string name="attachment_message">Пересланное сообщение</string>
+<string name="attachment_messages">Пересланные сообщения</string>
+<string name="attachment_document">Документ</string>
+<string name="attachment_documents">Документы</string>
+<string name="attachment_location">Местоположение</string>
+<string name="attachment_mixed">Вложения</string>
+
+<string name="chat_message_activity_title">Просмотр сообщения</string>
+
+<string name="empty_list_messages_search">Сообщений не найдено</string>
+<string name="empty_list_messages">Сообщений пока нет</string>
+<string name="empty_list_friends">Друзей пока нет</string>
+<string name="empty_list_dialogs">Разговоров пока нет</string>
+<string name="empty_list_suggestions">Пусто</string>
+<string name="empty_list_people_search">Пусто</string>
+<string name="empty_list_contacts">Пусто</string>
+
+<string name="application_name">Сообщения Вконтакте</string>
+
+<string name="loading_text">Загрузка</string>
+
+<string name="captcha_key_hint">Введите код</string>
+<string name="submit_captcha_button_text">Ввести код</string>
+
+<string name="change_dialog_title_button_text">Изменить название беседы</string>
+<string name="dialog_title_hint">Название беседы</string>
+<string name="participant_list_is_empty">Нет собеседников</string>
+<string name="add_participant_button_text">Добавить собеседника</string>
+<string name="create_group_chat_button_text">Создать групповую беседу</string>
+<string name="toast_participants_required">Добавьте хотя бы одного собеседника</string>
+
+<string name="edit_dialog_action_bar_title_format">%d участников</string>
+<string name="create_dialog_action_bar_title">Создание беседы</string>
+<string name="create_dialog_action_bar_button_text">+</string>
+
+<string name="timeFormat_today">сегодня</string>
+<string name="timeFormat_yesterday">вчера</string>
+<string name="timeFormat_at">в</string>
+
+<string name="message_uploading_images">Загрузка изображений</string>
+
+<string formatted="false" name="error_registration_invalid_input">Неверные данные. Пожалуйста, убедитесь, что телефон или email и пароль введены правильно и повторите попытку.</string>
+<string formatted="false" name="error_registration_confirmation_invalid_input">Неверные данные. Пожалуйста, убедитесь, что телефон или email и пароль введены правильно и повторите попытку. </string>
+<string formatted="false" name="error_registration_is_pending">Запрос для этого номера телефона уже обрабатывается. Повторите попытку через 5 минут.</string>
+<string formatted="false" name="error_phone_taken">Телефон уже зарегистрирован за другим пользователем.</string>
+<string formatted="false" name="error_try_later">Запрос обрабатывается. Попробуйте еще раз через 10 секунд.</string>
+
+<string formatted="false" name="error_playing_video">Ошибка воспроизведения видео.</string>
+<string formatted="false" name="error_network_issue">Ошибка сети. Проверьте ваше интернет-соединение.</string>
+<string formatted="false" name="error_bad_email_or_password">Неверные данные. Пожалуйста, убедитесь, что телефон или email и пароль введены правильно и повторите попытку.</string>
+<string formatted="false" name="error_internal_error">Неизвестная ошибка.</string>
+
+<string formatted="false" name="notification_default_ticker">Новые уведомления</string>
+<string formatted="false" name="notification_title_for_offer_format">Запрос дружбы от пользователя %s</string>
+<string formatted="false" name="notification_content_text_format">У вас %s</string>
+<string formatted="false" name="notification_content_text_messages_part_format">%d новых сообщений</string>
+<string formatted="false" name="notification_content_text_separator">, </string>
+<string formatted="false" name="notification_content_text_offers_part_format">%d заявок в друзья</string>
+
+<string name="tab_button_messages">Сообщения</string>
+<string name="tab_button_friends">Друзья</string>
+<string name="tab_button_search">Поиск</string>
+<string name="tab_button_settings">Настройки</string>
+
+<string name="cancel">Отмена</string>
+<string name="yes">Да</string>
+<string name="no">Нет</string>
+
+<string name="photo_dialog_from_gallery">Выбрать фото из галереи</string>
+<string name="photo_dialog_from_camera">Сделать снимок с камеры</string>
+<string name="photo_dialog_title">Фотография</string>
+
+<string name="login_progress_message">Выполняется вход.</string>
+
+<string name="playback_notification_default_content_title">Играет музыка</string>
+<string name="playback_notification_default_content_text">Аудиозапись</string>
+
+<string name="chat_messages_input_hint">Написать сообщение</string>
+<string name="chat_messages_button_send">Отпр.</string>
+<string name="chat_messages_button_cancel">Отменить</string>
+<string name="chat_messages_button_delete">Удалить %d</string>
+<string name="chat_messages_button_forward">Переслать %d</string>
+<string name="chat_last_activity_format" formatted="false">Пользователь был в сети %s</string>
+<string name="attach_location_button_text">Прикрепить местоположение</string>
+<string name="attach_photo_from_gallery_button_text">Выбрать фотографию из галереи</string>
+<string name="attach_photo_from_camera_button_text">Сделать снимок с камеры</string>
+
+<string name="some_trouble">Произошла ошибка.</string>
+
+<string name="chat_activity_for_one_format" formatted="false" >%s набирает сообщение</string>
+<string name="chat_activity_for_multiply_format" formatted="false" >%s набирают сообщения</string>
+
+<string name="retry">Попробовать еще раз</string>
+
+<string name="menu_extended">Расширенные настройки</string>
+
+<string name="menu_quality_240">240P</string>
+<string name="menu_quality_320">320P</string>
+<string name="menu_quality_480">480P</string>
+<string name="menu_quality_720">720P</string>
+<string name="menu_reject_all_offers_title">Отклонить все заявки</string>
+
+<string name="pref_section_push_notifications">Уведомления</string>
+<string name="pref_push_notifications_enabled">Push уведомления</string>
+<string name="pref_push_notifications_sound">Звук</string>
+<string name="pref_push_notifications_vibration">Вибрация</string>
+
+<string name="menuItem_open_chat">Перейти к беседе</string>
+<string name="menuItem_view_message">Просмотреть сообщение</string>
+
+</resources>

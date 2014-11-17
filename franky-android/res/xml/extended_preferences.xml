@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:title="Log level" android:key="logLevel" android:entries="@array/logLevelKeys" android:entryValues="@array/logLevelValues"></ListPreference>
+    <CheckBoxPreference android:title="Log to file" android:key="logToFile"></CheckBoxPreference>
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100"><scale android:drawable="@drawable/load_white0" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white1" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white2" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white3" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white4" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white5" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white6" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white7" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white8" android:scaleGravity="center"/></item>
+    <item android:duration="100"><scale android:drawable="@drawable/load_white9" android:scaleGravity="center"/></item>
+</animation-list>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.gorecode.vk.view.VkActionBar
+        xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+        android:id="@id/actionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        vk:backButton_visible="false"
+        vk:title="@string/settings_title" >
+    </com.gorecode.vk.view.VkActionBar>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.gorecode.vk.view.WebImageView
+                android:id="@+id/photo"
+                android:layout_marginTop="10dip"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dip"
+                android:scaleType="centerCrop" />
+
+            <com.gorecode.vk.view.MyriadButton
+                android:id="@+id/change_profile_photo_button"
+                style="@style/blue_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:text="@string/change_profile_photo_button" />
+
+            <com.gorecode.vk.view.MyriadButton
+                android:id="@+id/logout_button"
+                style="@style/blue_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:text="@string/logout_button_text" />
+
+            <com.gorecode.vk.view.HelveticaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:text="@string/preferences_section_other"
+                android:textSize="17sp"
+                android:textColor="#000000" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="3dip"
+                android:background="@drawable/delimeter" />
+
+            <com.gorecode.vk.view.MyriadButton
+                android:id="@+id/preferences_button"
+                style="@style/blue_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dip"
+                android:text="@string/preferences_button_text" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

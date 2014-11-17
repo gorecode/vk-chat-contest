@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gorecode.vk.view.HelveticaTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="10dip"
+    android:text="Today"
+    android:textSize="17dip"
+    android:textStyle="bold"
+    android:layout_marginTop="5dip"
+    android:layout_marginBottom="5dip"
+    android:textColor="#434f5e" />

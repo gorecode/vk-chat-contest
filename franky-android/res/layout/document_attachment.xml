@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:duplicateParentState="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/document_file_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:background="@drawable/doc"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/document_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:duplicateParentState="true"
+            android:drawableLeft="@drawable/doc_icon"
+            android:drawablePadding="5dip"
+            android:text="Dowload document AAA"
+            android:textColor="@android:color/white" >
+        </TextView>
+    </FrameLayout>
+
+    <FrameLayout
+        xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+        android:id="@+id/document_image_layout"
+        android:layout_width="136.0dip"
+        android:layout_height="100.0dip"
+        android:duplicateParentState="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dip"
+        android:clickable="true" >
+
+        <com.gorecode.vk.view.WebImageView
+            android:id="@+id/photo_thumb"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:duplicateParentState="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/black"
+            android:scaleType="centerCrop" />
+
+        <com.gorecode.vk.view.TextViewCustomFont
+            android:id="@+id/document_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#80000000"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:text="document.png"
+            android:textColor="#ffffffff"
+            android:textSize="13.0sp"
+            vk:typeface="myriad.ttf" />
+    </FrameLayout>
+
+</LinearLayout>

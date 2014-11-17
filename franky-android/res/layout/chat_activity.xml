@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.gorecode.vk.view.VkActionBar
+            android:id="@+id/actionBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            vk:actionButton_layout="@layout/chat_activity_action_button" >
+        </com.gorecode.vk.view.VkActionBar>
+
+        <LinearLayout
+            android:id="@+id/messages_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@drawable/black_top" >
+
+            <com.gorecode.vk.view.ButtonMyriad
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="8.0dip"
+                android:background="@drawable/cancel_button_selector"
+                android:text="@string/chat_messages_button_cancel"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+            <com.gorecode.vk.view.ButtonMyriad
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="8.0dip"
+                android:background="@drawable/delete_button"
+                android:text="@string/chat_messages_button_delete"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+
+            <com.gorecode.vk.view.ButtonMyriad
+                android:id="@+id/forward_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="8.0dip"
+                android:background="@drawable/forward_button"
+                android:text="@string/chat_messages_button_forward"
+                android:textColor="#ffffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <FrameLayout
+            android:id="@+id/compose_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <include layout="@layout/chat_compose_layout" />
+        </FrameLayout>
+
+        <com.gorecode.vk.view.LoaderLayout
+            android:id="@+id/loaderLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/compose_layout"
+            android:background="@color/message_background_read" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@id/android:list"
+                    style="@style/list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:dividerHeight="0dip"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    android:cacheColorHint="@color/message_background_read"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbarThumbVertical="@drawable/scrollbar" />
+
+                <TextView
+                    android:id="@id/android:empty"
+                    style="@style/emptyListText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/empty_list_messages" />
+            </RelativeLayout>
+        </com.gorecode.vk.view.LoaderLayout>
+
+        <LinearLayout
+            android:id="@+id/popup_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/compose_layout"
+            android:layout_gravity="bottom|left|center"
+            android:background="@drawable/attach_menu"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/attach_photo_from_camera_popup_item"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/popup_item_background"
+                android:clickable="true"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/attach_photo" />
+
+                <com.gorecode.vk.view.MyriadTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7.0dip"
+                    android:text="@string/attach_photo_from_camera_button_text"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:background="@drawable/delimeter2" />
+
+            <LinearLayout
+                android:id="@+id/attach_photo_from_gallery_popup_item"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/popup_item_background"
+                android:clickable="true"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/attach_gallery" />
+
+                <com.gorecode.vk.view.MyriadTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7.0dip"
+                    android:text="@string/attach_photo_from_gallery_button_text"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2.0dip"
+                android:background="@drawable/delimeter2" />
+
+            <LinearLayout
+                android:id="@+id/attach_location_popup_item"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:background="@drawable/popup_item_background"
+                android:clickable="true"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:src="@drawable/attach_location" />
+
+                <com.gorecode.vk.view.MyriadTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7.0dip"
+                    android:text="@string/attach_location_button_text"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

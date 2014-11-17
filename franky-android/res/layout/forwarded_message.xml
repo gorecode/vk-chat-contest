@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dip"
+    android:duplicateParentState="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:duplicateParentState="true"
+        android:orientation="horizontal" >
+
+        <com.gorecode.vk.view.WebImageView
+            android:id="@+id/photo_thumb"
+            android:layout_width="41dip"
+            android:layout_height="41dip"
+            android:layout_marginRight="5dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contact_nophoto" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+
+            <com.gorecode.vk.view.TextViewCustomFont
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Name"
+                android:textColor="@color/black_text"
+                android:textSize="17.0sp"
+                android:textStyle="bold"
+                vk:typeface="myriad.ttf" />
+
+            <com.gorecode.vk.view.TextViewCustomFont
+                android:id="@+id/timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:ellipsize="marquee"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:text="22:00"
+                android:textColor="@color/lightblue_text"
+                android:textSize="15.0sp"
+                vk:typeface="helvetica.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.gorecode.vk.view.TextViewCustomFont
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:text="Текст сообщения"
+        android:textColor="@color/black_text"
+        android:textSize="17.0sp"
+        vk:typeface="helvetica.ttf" />
+
+    <com.gorecode.vk.view.TextViewCustomFont
+        android:id="@+id/attachments_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:text="2 фотографии"
+        android:textColor="@color/lightblue_text"
+        android:textSize="17.0sp"
+        vk:typeface="helvetica.ttf" />
+</LinearLayout>

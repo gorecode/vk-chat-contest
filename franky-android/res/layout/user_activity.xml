@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:vk="http://schemas.android.com/apk/res/com.gorecode.vk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_light"
+    android:orientation="vertical" >
+
+    <com.gorecode.vk.view.VkActionBar
+        android:id="@id/actionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        vk:backButton_visible="true" />
+
+    <com.gorecode.vk.view.WebImageView
+        android:id="@+id/photo"
+        android:layout_width="125dip"
+        android:layout_height="125dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="17dip"
+        android:layout_marginTop="17dip"
+        android:background="@drawable/photo_placeholder"
+        android:maxHeight="125dip"
+        android:maxWidth="125dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/photo_placeholder1" />
+
+    <Button
+        android:id="@+id/addToFriendsButton"
+        style="@style/blue_user_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_friends_button_text" />
+
+        <com.gorecode.vk.view.MyriadTextView
+            android:id="@+id/rejectOfferButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="16dip"
+            android:layout_gravity="center_horizontal|bottom"
+            android:clickable="true"
+            android:paddingBottom="8.0dip"
+            android:shadowColor="#ffffffff"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="@string/reject_offer_button_text"
+            android:textColor="#ff155ba9"
+            android:textSize="17.0sp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sendMessageButton"
+        style="@style/blue_user_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_message_button_text" />
+
+    <Button
+        android:id="@+id/callButton"
+        style="@style/blue_user_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/call_button_text_format" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dip">
+
+        <com.gorecode.vk.view.MyriadTextView
+            android:id="@+id/removeFromFriendsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:clickable="true"
+            android:paddingBottom="8.0dip"
+            android:shadowColor="#ffffffff"
+            android:shadowDx="0.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="@string/remove_from_friends_button_text"
+            android:textColor="#ff155ba9"
+            android:textSize="17.0sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

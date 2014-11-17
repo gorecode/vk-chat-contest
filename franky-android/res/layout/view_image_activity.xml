@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_white"
+    android:orientation="vertical" >
+
+    <com.gorecode.vk.view.SafeViewFlipper
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/grey_progress"/>
+
+        <com.gorecode.vk.view.TouchImageView
+            android:id="@+id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+    </com.gorecode.vk.view.SafeViewFlipper>
+</LinearLayout>
